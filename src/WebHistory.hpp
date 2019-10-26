@@ -20,6 +20,9 @@ class WebHistory
 		
 		// TODO: Consturctor with a single tab. The tab information is given as a url and a timestamp.
 		WebHistory(std::string url, int timestamp);
+
+		// TODO: Destructor.
+		~WebHistory();
 		
 		// GIVEN: Prints the history in a specific format.
 		void printHistory();

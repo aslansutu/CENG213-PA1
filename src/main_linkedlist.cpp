@@ -8,14 +8,22 @@ int main() {
     llist.printAllNodes();
 
     llist.insertAtTheEnd(1);
-    llist.insertAtTheEnd(7);
+    llist.insertAtTheFront(7);
     llist.insertAtTheEnd(4);
+    llist.insertAtTheEnd(8);
 
     llist.printAllNodes();
 
-    llist.removeNode(llist.findNode(4));
+    std::cout << "finding node and printing" << llist.findNode(4) << std::endl;
+
 
     llist.printAllNodes();
+
+    std::cout << "removeall nodes" << std::endl;
+    llist.removeAllNodes();
+    llist.printAllNodes();
+    std::cout << "should have printed NULL" << std::endl;
+
 
     return 0;
 }
